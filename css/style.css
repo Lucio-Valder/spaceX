@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+/*topnav menu*/
+
+.topnav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.topnav a {
+    color: #000;
+    float: right;
+    padding-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 25px 0 0;
+}
+
+.topnav a:hover {
+    color: #ffffff;
+}
+
+/*topnav menu @media*/
+
+@media(max-width:600px) {
+    .topnav {
+        background-color: rgba(0, 0, 0, -1);
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .topnav a {
+        float: none;
+        font-size: 25px;
+        padding-top: 5px;
+        background-color: rgba(6, 64, 122, 0.8);
+        width: 100%;
+        height: 35px;
+        margin: 0 0 0 0; 
+        border:1px solid red;
+    }
+    .topnav a:hover {
+        margin: 0 0 2px 0;
+        font-size: 30px;
+        padding-top: 0;
+        box-shadow: -5px 4px 8px 4px #000000; width:90%;
+        transform:translate (5px,2.5px);
+    }
+    /************************/
+}
+
+.parallax {
+    background-image: url("https://images6.alphacoders.com/104/1041418.jpg");
+    height: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax .h1s {
+    text-align: left;
+    color: #ffffff; 
+    border:1px solid red;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    text-shadow: 2px 2px #000;
+    padding-top: 160px;
+    padding-left: 40px;
+    width: 1000px;
+    font-size: 60px;
+}
+
+@media(max-width:935px) {
+    .parallax .h1s {
+        width: 100%;
+        font-size: 40px;
+    }
+}
+
+/*parallax 1 */
+
+.container-corpo {
+    background-color: #ffffff;
+}
+
+.corpo {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+}
+
+.corpo .itens {
+    margin: 15px;
+    width: 350px;
+    height: 600px;
+    border:1px solid #000;
+    text-align: justify;
+}
+
+.container-corpo .h2s {
+    width: 100%;
+    height: 40px;
+    border:1px solid red;
+    text-align: center;
+}
+
+.container-corpo h2 {
+    text-align: center;
+}
+
+.container-corpo img {
+    width: 90%;
+    height: 250px;
+    margin: 15px 0 0 17px;
+}
+
+.container-corpo p {
+    margin: 15px 17px 0 17px;
+}
+
+.container-corpo a {
+    margin: 0 0 0 10px;
+}
+
+/* container-corpo - corpo1 - SpaceX Rokets*/
+
+@media (max-width:900px) {
+    .corpo {
+        height: 1950px;
+        flex-wrap: wrap;
+    }
+}
+
+/* container-corpo - corpo1 @media*/
+
+/********************************/
+
+.parallax2 {
+    height: 100%;
+    background-image: url("https://images4.alphacoders.com/904/904629.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo2 {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border:1px solid red;
+    color:#ffffff;
+    background-color: rgba(240, 238, 233, .7);
+}
+
+.corpo2 p {
+    color: #000000;
+    border:1px solid red;
+    font-size: 16px;
+    padding: 30px 0 0 0;
+    width: 450px;
+    height: 500px;
+    text-align: justify;
+}
+
+.corpo2 img {
+    width: 50%;
+    border:1px solid red; 
+}
+
+@media (max-width:1071px) {
+    .parallax2 {
+        height: 100%;
+    }
+    .corpo2 {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .corpo2 p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: -10px;
+        width: 100%;
+        height: 450px;
+    }
+    .corpo2 img {
+        width: 500px;
+    }
+}
+
+.parallax3 {
+    border: 1px solid;
+    height: 100%;
+    background-image: url("https://images.alphacoders.com/105/1057450.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3-corpo {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    background-color: rgba(240, 238, 233, .5);
+}
+
+.paralax-3-corpo article {
+    flex-direction: row-reverse;
+}
+
+.parallax3 .img-parallax3 {
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#99aed1, #9db1d1);
+    display: flex;
+    justify-content: center;
+}
+
+.rodape a {
+    color: #474642;
+    font-size: 14px;
+    margin: 2px;
+    text-decoration: none;
+}
+
+.rodape div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 150px;
+    margin: 0 10px 0 10px;
+    padding: 10px;
+}
